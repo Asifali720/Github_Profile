@@ -1,0 +1,118 @@
+body{
+    background-color: #2a2565;
+
+display: flex;
+align-items: start;
+justify-content: center;
+height: 100vh;
+font-family: monospace;
+}
+.search_bar{
+    width: 300px;
+    background: #462891;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.search_bar input{
+    width: 100% ;
+    border: none;
+    padding: 8px 16px;
+    background: transparent;
+    color: white;
+}
+
+.search_bar input:focus{
+   outline: none
+}
+.search_bar #search-btn{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+}
+.search_bar input::placeholder{
+    color: gainsboro;
+    font-style: italic;
+}
+
+.profile-card{
+    background: #462891;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 16px;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    gap: 20px;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        text-align: left;
+        align-items: start;
+    }
+}
+.profile-card .circle-vector{
+    padding: 16px;
+    background: #342e74;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile-card .circle-vector img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.content{
+    width: 100%;
+    max-width: 450px;
+}
+
+.content h2{
+    color: white;
+}
+
+.content span{
+    font-size: 14px;
+    color: white;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+.content p{
+    color: white;
+    margin-bottom: 24px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 24px;
+    padding: 0px;
+    @media (min-width: 1024px) {
+        justify-content: start;
+    }
+
+}
+ul li{
+    list-style: none;
+    color: white;
+}
+
+.repos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.repo{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    background: #342e74;
+}
